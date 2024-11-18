@@ -10,6 +10,7 @@ public class OculusMusicSwitcher : MonoBehaviour
     public InputActionProperty switchAction;  // Acción de entrada para cambiar de canción
     private AudioSource audioSource;
     private int currentSongIndex = 0;
+    private bool fire = false;
 
     void Start()
     {
@@ -28,16 +29,15 @@ public class OculusMusicSwitcher : MonoBehaviour
 
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.One))
+        if (OVRInput.Get(OVRInput.Button.SecondaryThumbstick) && fire == false)
         {
+            fire = true;
             ChangeSong();
         }
-
-        // Comprueba si el botón asignado ha sido presionado
-       /* if (switchAction.action.WasPressedThisFrame())
+        if (fire == true && OVRInput.Get(OVRInput.Button.SecondaryThumbstick) != true)
         {
-            ChangeSong();
-        }   */
+            fire = false;
+        }
     }
 
     void ChangeSong()

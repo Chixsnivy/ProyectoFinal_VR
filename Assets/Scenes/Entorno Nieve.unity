@@ -4757,15 +4757,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.7
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.7
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.7
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4815,6 +4815,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.75
       objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: JumpForce
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: useProfileData
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: GravityModifier
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -4834,6 +4846,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 649809574}
+    - targetCorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 649809575}
   m_SourcePrefab: {fileID: 100100000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
 --- !u!4 &649809570 stripped
 Transform:
@@ -4867,11 +4882,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becdbab0745805f488bb7ce6214263d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  runMultiplier: 3
+  speed: 3
+  runMultiplier: 2
   gravity: -9.81
   jumpHeight: 2
   rotationSpeed: 90
+--- !u!114 &649809575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649809573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69d901f94217e7f4b94cfec1ad6cada4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &657284526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d5ef830522d1f54da153133d4f6c753, type: 3}
@@ -16373,6 +16400,87 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8281756918473099310, guid: bb4b0bb9120793e42b2c3e1e977c6096, type: 3}
+--- !u!1001 &2004729733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 108.429306
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.183027
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 99.26268
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 194164882212787297, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5449623882606918776, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_Name
+      value: OculusMusicController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5449623882606918776, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542401708390859748, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: songs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: ce74782871b83b745b614b69303fdbb5, type: 3}
+    - target: {fileID: 5542401708390859748, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: songs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b3c6ab432d733b14f82cf4d72d8d1edd, type: 3}
+    - target: {fileID: 5542401708390859748, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: songs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 94c8d9af290d79844aa64c351025b404, type: 3}
+    - target: {fileID: 5542401708390859748, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: songs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: ac034d5c4866f9145bf84ed1069aca1b, type: 3}
+    - target: {fileID: 5542401708390859748, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
+      propertyPath: songs.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8fc34dff3b698704ba956a38f59670cb, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b87c445d680eac14a84ddf86b9782395, type: 3}
 --- !u!1 &2005728011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9a3355eff1dbe1b4896ff8d638cdf16c, type: 3}
@@ -17336,6 +17444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicController
       objectReference: {fileID: 0}
+    - target: {fileID: 1192441586398860580, guid: d5014ec4ac1ffd6478ffdad3ccdd49a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4224925162711141704, guid: d5014ec4ac1ffd6478ffdad3ccdd49a2, type: 3}
       propertyPath: songs.Array.size
       value: 5
@@ -17409,5 +17521,6 @@ SceneRoots:
   - {fileID: 1406594361}
   - {fileID: 1242428657}
   - {fileID: 944577759287734282}
-  - {fileID: 1275027212}
   - {fileID: 1895099492}
+  - {fileID: 2004729733}
+  - {fileID: 1275027212}
